@@ -1,9 +1,7 @@
 # sign2text
 ### Real-time AI-powered translation of American sign language to text
 
-The project focuses on translating American Sign Language (ASL) [fingerspelled alphabet](http://lifeprint.com/asl101/topics/wallpaper1.htm) (26 letters). I utilised transfer learning to extract features, followed by a custom classification block to classify letters. This model is then implemented in a real-time system with OpenCV - reading frames from a web camera and classifying them frame-by-frame. This repository contains the code & weights for classifying the American Sign Language (ASL) alphabet in real-time.
-
-This project was developed as my portfolio project at the Data Science Retreat (Batch 09) in Berlin. Please feel free to fork/comment/collaborate! Presentation slides are available in the repo :)
+The project focuses on translating American Sign Language (ASL) [fingerspelled alphabet](http://lifeprint.com/asl101/topics/wallpaper1.htm) (26 letters). We utilised transfer learning to extract features, followed by a custom classification block to classify letters. This model is then implemented in a real-time system with OpenCV - reading frames from a web camera and classifying them frame-by-frame. This repository contains the code & weights for classifying the American Sign Language (ASL) alphabet in real-time.
 
 # Usage 
 
@@ -42,7 +40,7 @@ required arguments:
 
 NOTE - On a MacBook Pro (macOS SIERRA 16GB 1600MHz DDR3/2.2 GHz Intel Core i7) using the CPU only, it can take up to ~250ms to classify a single frame. This results in lag during real-time classification as the effective frame rate is anywhere from 1-10 frames per second,  depending on which model is running. MobileNet is the most efficient model. Performance for all models is is significantly improved if running on a GPU. 
 
-# 1. American Sign Language
+# American Sign Language
 
 There are no accurate measurements of how many people use American Sign Lanuage (ASL) - estimates vary from 500,000 to 15 million people. However, 28 million Americans (~10% of the population) have some degree of hearing loss, and 2 million of these 28 million are classified as deaf. For many of these people, their first lanugage is ASL.
 
@@ -54,16 +52,8 @@ The ASL alphabet is 'fingerspelled' - this means all of the alphabet (26 letters
 
 This project is a (very small!) first step towards bridging the gap between 'signers' and 'non-signers'.
 
-# 2. Pre-processing
-coming soon I promise
-# 3. Transfer learning & feature extraction
-coming soon
-# 4. Training
-coming soon
-# 5. Real-time system
-coming soon
 
-# 6. References
+# References
 https://research.gallaudet.edu/Publications/ASL_Users.pdf
 https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
 
